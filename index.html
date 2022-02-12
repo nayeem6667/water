@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Glassmorphism Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="" class="logo">Water</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>My Name is...<br><span>MD NAYEEM SIDDIQUE</span></h2>
+        </div>
+        <video src="./images/beach.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="https://www.facebook.com/rafi.siddique.543">Facebook</a></li>
+            <li style="--i:2"><a href="#">Twitter</a></li>
+            <li style="--i:3"><a href=https://www.instagram.com/nayeemking72/">Instagram</a></li>
+            <li style="--i:4"><a href="nayeemsiddique0@gnail.com">Email</a></li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1;"><a href="#">Home</a></li>
+            <li style="--i:2;"><a href="#">About me</a></li>
+            <li style="--i:3;"><a href="#">Tour</a></li>
+            <li style="--i:4;"><a href="#">Contact me</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggle');
+            toggleMenu.classList.toggle('active');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
